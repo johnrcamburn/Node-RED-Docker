@@ -27,8 +27,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 280,
-        "y": 120,
+        "x": 200,
+        "y": 100,
         "wires": [
             [
                 "1e784ae2d63a60a2"
