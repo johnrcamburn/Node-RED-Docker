@@ -7,14 +7,6 @@
         "info": ""
     },
     {
-        "id": "35b29f12124f07ee",
-        "type": "tab",
-        "label": "Flow 2",
-        "disabled": false,
-        "info": "",
-        "env": []
-    },
-    {
         "id": "d6201f8a523a8328",
         "type": "inject",
         "z": "3af82246.3634ae",
@@ -77,113 +69,5 @@
                 "1e784ae2d63a60a2"
             ]
         ]
-    },
-    {
-        "id": "65a4b7baaf118600",
-        "type": "inject",
-        "z": "35b29f12124f07ee",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 260,
-        "y": 240,
-        "wires": [
-            [
-                "6f29de7294ba554b",
-                "06a93854b7b809f4"
-            ]
-        ]
-    },
-    {
-        "id": "06a93854b7b809f4",
-        "type": "function",
-        "z": "35b29f12124f07ee",
-        "name": "",
-        "func": "\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 460,
-        "y": 200,
-        "wires": [
-            [
-                "a2a73036b54c7b04"
-            ]
-        ]
-    },
-    {
-        "id": "6f29de7294ba554b",
-        "type": "function",
-        "z": "35b29f12124f07ee",
-        "name": "",
-        "func": "\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 440,
-        "y": 300,
-        "wires": [
-            [
-                "a2a73036b54c7b04"
-            ]
-        ]
-    },
-    {
-        "id": "a2a73036b54c7b04",
-        "type": "join",
-        "z": "35b29f12124f07ee",
-        "name": "",
-        "mode": "auto",
-        "build": "object",
-        "property": "payload",
-        "propertyType": "msg",
-        "key": "topic",
-        "joiner": "\\n",
-        "joinerType": "str",
-        "accumulate": "false",
-        "timeout": "",
-        "count": "",
-        "reduceRight": false,
-        "x": 610,
-        "y": 260,
-        "wires": [
-            [
-                "0ae82c222bf54edf"
-            ]
-        ]
-    },
-    {
-        "id": "0ae82c222bf54edf",
-        "type": "debug",
-        "z": "35b29f12124f07ee",
-        "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 810,
-        "y": 260,
-        "wires": []
     }
 ]
