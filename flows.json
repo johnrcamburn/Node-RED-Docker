@@ -111,14 +111,14 @@
         "id": "3e2a385b2b0131c4",
         "type": "function",
         "z": "fce696d057a39914",
-        "name": "",
+        "name": "Function 2",
         "func": "\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 660,
+        "x": 670,
         "y": 180,
         "wires": [
             [
