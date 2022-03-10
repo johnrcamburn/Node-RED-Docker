@@ -7,14 +7,6 @@
         "info": ""
     },
     {
-        "id": "fce696d057a39914",
-        "type": "tab",
-        "label": "Flow 3",
-        "disabled": false,
-        "info": "",
-        "env": []
-    },
-    {
         "id": "d6201f8a523a8328",
         "type": "inject",
         "z": "3af82246.3634ae",
@@ -77,88 +69,5 @@
                 "1e784ae2d63a60a2"
             ]
         ]
-    },
-    {
-        "id": "3b58b637bfcc778b",
-        "type": "inject",
-        "z": "fce696d057a39914",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 320,
-        "y": 240,
-        "wires": [
-            [
-                "1fd58bd67452f17d"
-            ]
-        ]
-    },
-    {
-        "id": "3e2a385b2b0131c4",
-        "type": "function",
-        "z": "fce696d057a39914",
-        "name": "Second Function",
-        "func": "\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 690,
-        "y": 180,
-        "wires": [
-            [
-                "9979c318e5278f92"
-            ]
-        ]
-    },
-    {
-        "id": "1fd58bd67452f17d",
-        "type": "function",
-        "z": "fce696d057a39914",
-        "name": "",
-        "func": "\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 480,
-        "y": 200,
-        "wires": [
-            [
-                "3e2a385b2b0131c4"
-            ]
-        ]
-    },
-    {
-        "id": "9979c318e5278f92",
-        "type": "debug",
-        "z": "fce696d057a39914",
-        "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 890,
-        "y": 200,
-        "wires": []
     }
 ]
